@@ -1,0 +1,24 @@
+<html>
+    <script>
+        //imc = peso / (altura * altura)
+        function imc(peso, altura){
+            var imc = peso / (altura * altura);
+
+            if (imc < 18.5){
+            console.log("Seu IMC é de ", + imc + " e você está ABAIXO DO PESO!");
+            } else if (imc >= 18.5 && imc < 25){
+            console.log("Seu IMC é de ", + imc + " e você está NO PESO NORMAL!");
+            } else if (imc >= 25 && imc < 30){
+            console.log("Seu IMC é de ", + imc + " e você está COM SOBREPESO!");
+            } else if (imc >= 30 && imc < 35){
+            console.log("Seu IMC é de ", + imc + " e você está COM OBESIDADE GRAU I!");
+            } else if (imc >= 35 && imc < 40){
+            console.log("Seu IMC é de ", + imc + " e você está COM OBESIDADE GRAU II!");
+            } else {
+            console.log("Seu IMC é de ", + imc + " e você está COM OBESIDADE GRAU III!");
+            }
+
+            return imc; 
+        }
+    </script>
+</html>
